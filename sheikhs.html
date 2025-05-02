@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القارئ - نتلوه</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #121212;
+            color: #ad8b50;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        .logo {
+            font-family: 'Rakkas', cursive;
+            font-size: 2rem;
+            margin: 0;
+            flex-shrink: 0;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        nav a {
+            color: #ad8b50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+        nav a:hover {
+            color: white;
+        }
+        
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Rakkas', cursive;
+            font-size: 2rem;
+            margin: 1rem;
+        }
+        .sheikh-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .sheikh-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+        .sheikh-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .sheikh-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+        .sheikh-card h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+            color: #ad8b50;
+            text-decoration: none;
+        }
+        .sheikh-card a {
+            text-decoration: none;
+        }
+        .mo {
+            text-align: center;
+            padding: 1rem;
+            color: #ad8b50;
+            font-size: 1.2rem;
+            font-family: 'Rakkas', cursive;
+            background-color: #121212;
+            width: 100%;
+            margin: 0 0 0.5rem 0;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .mo {
+                font-size: 1rem;
+                padding: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+            .sheikh-card {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">نتلوه</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="azkar.html">الأذكار</a>
+            <a href="sheikhs.html">القارئ</a>
+            <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
+            <a href="quran.html">القرآن الكريم</a>
+          </nav>
+    </header>
+    <main class="main-content">
+        <h2>اختر قارئك المفضل</h2>
+        <div class="sheikh-list">
+            <a href="elmenshawy.html" class="sheikh-card">
+                <img src="المنشاوي.jpg" alt="المنشاوي" class="sheikh-img">
+                <h3>الشيخ المنشاوي</h3>
+            </a>
+            <a href="عبد الباسط .html" class="sheikh-card">
+                <img src="عبد الباسط.jpg" alt="الشيخ عبد الباسط عبد الصمد" class="sheikh-img">
+                <h3>الشيخ عبد الباسط عبد الصمد</h3>
+            </a>
+            <a href="Naser.html" class="sheikh-card">
+                <img src="Naser.jpg" alt="الشيخ ناصر القطامي" class="sheikh-img">
+                <h3>الشيخ ناصر القطامي</h3>
+            </a>
+            <a href="ياسر .html" class="sheikh-card">
+                <img src="yaser.jpg" alt="الشيخ ياسر الدوسري" class="sheikh-img">
+                <h3>الشيخ ياسر الدوسري</h3>
+            </a>
+            <a href="ahmed.html" class="sheikh-card">
+                <img src="ahmed.jpg" alt="احمد بن طالب"   class="sheikh-img">
+                <h3> الشيخ احمد بن طالب</h3>
+            </a>
+        </div>
+    </main>
+    <div class="mo">صَلَّى عَلَـيَّ النبي</div>
+    <footer class="footer">
+        <p>© 2025 نتلوه. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

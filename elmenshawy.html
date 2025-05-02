@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتلوه | المنشاوي</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ad8b50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 0.5rem;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .content {
+      max-width: 500px;
+    }
+    h1 {
+      font-family: 'Rakkas', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 20px;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .shn div{
+      margin: 100px;
+      background-color:#ad8b50;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 50px 50px;
+      gap: 10px;
+      width:300px;
+      color: #121212;
+      
+  }
+  .shn{
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+button {
+  background-color: #ad8b50;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #333;
+}
+.mo{
+  background-color: #ad803c;
+  position: fixed;
+  left: 50px;
+  bottom: 10px;
+  color:#172435;
+  scale: 2 2;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="azkar.html">الأذكار</a>
+    <a href="sheikhs.html">القارئ</a>
+    <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
+    <a href="quran.html">القرآن الكريم</a>
+  </nav>
+  
+
+  <main>
+    <div class="content">
+      <h1>مرحبا في قسم التلاوات بصوت الشيخ المنشاوي</h1>
+    </div>
+    <img src="المنشاوي.jpg" alt="صورة تعبيرية" class="hero-image">
+  </main class>
+<div class="shn">
+  <div>سورة الفاتحة  <br>
+    <audio id="audio001" src="menshawy/001.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio001').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio001').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة البقرة  <br>
+    <audio id="audio002" src="menshawy/002.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio002').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio002').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة آل عمران  <br>
+    <audio id="audio003" src="menshawy/003.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio003').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio003').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النساء  <br>
+    <audio id="audio004" src="menshawy/004.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio004').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio004').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المائدة  <br>
+    <audio id="audio005" src="menshawy/005.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio005').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio005').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأنعام  <br>
+    <audio id="audio006" src="menshawy/006.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio006').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio006').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأعراف  <br>
+    <audio id="audio007" src="menshawy/007.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio007').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio007').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأنفال  <br>
+    <audio id="audio008" src="menshawy/008.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio008').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio008').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التوبة  <br>
+    <audio id="audio009" src="menshawy/009.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio009').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio009').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة يونس  <br>
+    <audio id="audio010" src="menshawy/010.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio010').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio010').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة هود  <br>
+    <audio id="audio011" src="menshawy/011.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio011').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio011').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة يوسف  <br>
+    <audio id="audio012" src="menshawy/012.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio012').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio012').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الرعد  <br>
+    <audio id="audio013" src="menshawy/013.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio013').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio013').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة إبراهيم  <br>
+    <audio id="audio014" src="menshawy/014.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio014').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio014').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحجر  <br>
+    <audio id="audio015" src="menshawy/015.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio015').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio015').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النحل  <br>
+    <audio id="audio016" src="menshawy/016.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio016').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio016').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الإسراء  <br>
+    <audio id="audio017" src="menshawy/017.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio017').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio017').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الكهف  <br>
+    <audio id="audio018" src="menshawy/018.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio018').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio018').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة مريم  <br>
+    <audio id="audio019" src="menshawy/019.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio019').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio019').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة طه  <br>
+    <audio id="audio020" src="menshawy/020.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio020').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio020').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأنبياء  <br>
+    <audio id="audio021" src="menshawy/021.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio021').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio021').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحج  <br>
+    <audio id="audio022" src="menshawy/022.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio022').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio022').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المؤمنون  <br>
+    <audio id="audio023" src="menshawy/023.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio023').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio023').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النور  <br>
+    <audio id="audio024" src="menshawy/024.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio024').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio024').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الفرقان  <br>
+    <audio id="audio025" src="menshawy/025.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio025').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio025').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الشعراء  <br>
+    <audio id="audio026" src="menshawy/026.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio026').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio026').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النمل  <br>
+    <audio id="audio027" src="menshawy/027.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio027').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio027').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القصص  <br>
+    <audio id="audio028" src="menshawy/028.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio028').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio028').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة العنكبوت  <br>
+    <audio id="audio029" src="menshawy/029.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio029').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio029').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الروم  <br>
+    <audio id="audio030" src="menshawy/030.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio030').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio030').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة لقمان  <br>
+    <audio id="audio031" src="menshawy/031.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio031').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio031').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة السجدة  <br>
+    <audio id="audio032" src="menshawy/032.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio032').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio032').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأحزاب  <br>
+    <audio id="audio033" src="menshawy/033.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio033').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio033').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة سبأ  <br>
+    <audio id="audio034" src="menshawy/034.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio034').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio034').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة فاطر  <br>
+    <audio id="audio035" src="menshawy/035.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio035').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio035').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة يس  <br>
+    <audio id="audio036" src="menshawy/036.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio036').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio036').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الصافات  <br>
+    <audio id="audio037" src="menshawy/037.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio037').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio037').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة ص  <br>
+    <audio id="audio038" src="menshawy/038.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio038').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio038').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الزمر  <br>
+    <audio id="audio039" src="menshawy/039.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio039').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio039').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة غافر  <br>
+    <audio id="audio040" src="menshawy/040.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio040').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio040').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة فصلت  <br>
+    <audio id="audio041" src="menshawy/041.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio041').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio041').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الشورى  <br>
+    <audio id="audio042" src="menshawy/042.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio042').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio042').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الزخرف  <br>
+    <audio id="audio043" src="menshawy/043.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio043').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio043').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الدخان  <br>
+    <audio id="audio044" src="menshawy/044.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio044').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio044').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الجاثية  <br>
+    <audio id="audio045" src="menshawy/045.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio045').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio045').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأحقاف  <br>
+    <audio id="audio046" src="menshawy/046.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio046').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio046').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة محمد  <br>
+    <audio id="audio047" src="menshawy/047.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio047').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio047').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الفتح  <br>
+    <audio id="audio048" src="menshawy/048.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio048').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio048').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحجرات  <br>
+    <audio id="audio049" src="menshawy/049.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio049').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio049').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة ق  <br>
+    <audio id="audio050" src="menshawy/050.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio050').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio050').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الذاريات  <br>
+    <audio id="audio051" src="menshawy/051.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio051').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio051').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الطور  <br>
+    <audio id="audio052" src="menshawy/052.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio052').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio052').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النجم  <br>
+    <audio id="audio053" src="menshawy/053.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio053').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio053').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القمر  <br>
+    <audio id="audio054" src="menshawy/054.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio054').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio054').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الرحمن  <br>
+    <audio id="audio055" src="menshawy/055.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio055').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio055').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الواقعة  <br>
+    <audio id="audio056" src="menshawy/056.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio056').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio056').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحديد  <br>
+    <audio id="audio057" src="menshawy/057.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio057').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio057').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المجادلة  <br>
+    <audio id="audio058" src="menshawy/058.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio058').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio058').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحشر  <br>
+    <audio id="audio059" src="menshawy/059.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio059').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio059').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الممتحنة  <br>
+    <audio id="audio060" src="menshawy/060.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio060').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio060').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الصف  <br>
+    <audio id="audio061" src="menshawy/061.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio061').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio061').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الجمعة  <br>
+    <audio id="audio062" src="menshawy/062.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio062').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio062').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المنافقون  <br>
+    <audio id="audio063" src="menshawy/063.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio063').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio063').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التغابن  <br>
+    <audio id="audio064" src="menshawy/064.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio064').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio064').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الطلاق  <br>
+    <audio id="audio065" src="menshawy/065.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio065').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio065').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التحريم  <br>
+    <audio id="audio066" src="menshawy/066.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio066').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio066').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الملك  <br>
+    <audio id="audio067" src="menshawy/067.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio067').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio067').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القلم  <br>
+    <audio id="audio068" src="menshawy/068.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio068').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio068').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الحاقة  <br>
+    <audio id="audio069" src="menshawy/069.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio069').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio069').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المعارج  <br>
+    <audio id="audio070" src="menshawy/070.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio070').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio070').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة نوح  <br>
+    <audio id="audio071" src="menshawy/071.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio071').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio071').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الجن  <br>
+    <audio id="audio072" src="menshawy/072.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio072').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio072').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المزمل  <br>
+    <audio id="audio073" src="menshawy/073.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio073').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio073').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المدثر  <br>
+    <audio id="audio074" src="menshawy/074.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio074').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio074').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القيامة  <br>
+    <audio id="audio075" src="menshawy/075.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio075').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio075').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الإنسان  <br>
+    <audio id="audio076" src="menshawy/076.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio076').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio076').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المرسلات  <br>
+    <audio id="audio077" src="menshawy/077.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio077').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio077').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النبأ  <br>
+    <audio id="audio078" src="menshawy/078.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio078').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio078').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النازعات  <br>
+    <audio id="audio079" src="menshawy/079.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio079').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio079').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة عبس  <br>
+    <audio id="audio080" src="menshawy/080.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio080').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio080').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التكوير  <br>
+    <audio id="audio081" src="menshawy/081.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio081').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio081').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الانفطار  <br>
+    <audio id="audio082" src="menshawy/082.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio082').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio082').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المطففين  <br>
+    <audio id="audio083" src="menshawy/083.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio083').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio083').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الانشقاق  <br>
+    <audio id="audio084" src="menshawy/084.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio084').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio084').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة البروج  <br>
+    <audio id="audio085" src="menshawy/085.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio085').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio085').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الطارق  <br>
+    <audio id="audio086" src="menshawy/086.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio086').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio086').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الأعلى  <br>
+    <audio id="audio087" src="menshawy/087.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio087').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio087').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الغاشية  <br>
+    <audio id="audio088" src="menshawy/088.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio088').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio088').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الفجر  <br>
+    <audio id="audio089" src="menshawy/089.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio089').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio089').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة البلد  <br>
+    <audio id="audio090" src="menshawy/090.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio090').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio090').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الشمس  <br>
+    <audio id="audio091" src="menshawy/091.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio091').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio091').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الليل  <br>
+    <audio id="audio092" src="menshawy/092.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio092').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio092').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الضحى  <br>
+    <audio id="audio093" src="menshawy/093.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio093').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio093').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الشرح  <br>
+    <audio id="audio094" src="menshawy/094.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio094').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio094').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التين  <br>
+    <audio id="audio095" src="menshawy/095.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio095').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio095').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة العلق  <br>
+    <audio id="audio096" src="menshawy/096.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio096').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio096').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القدر  <br>
+    <audio id="audio097" src="menshawy/097.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio097').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio097').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة البينة  <br>
+    <audio id="audio098" src="menshawy/098.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio098').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio098').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الزلزلة  <br>
+    <audio id="audio099" src="menshawy/099.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio099').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio099').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة العاديات  <br>
+    <audio id="audio100" src="menshawy/100.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio100').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio100').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة القارعة  <br>
+    <audio id="audio101" src="menshawy/101.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio101').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio101').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة التكاثر  <br>
+    <audio id="audio102" src="menshawy/102.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio102').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio102').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة العصر  <br>
+    <audio id="audio103" src="menshawy/103.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio103').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio103').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الهمزة  <br>
+    <audio id="audio104" src="menshawy/104.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio104').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio104').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الفيل  <br>
+    <audio id="audio105" src="menshawy/105.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio105').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio105').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة قريش  <br>
+    <audio id="audio106" src="menshawy/106.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio106').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio106').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الماعون  <br>
+    <audio id="audio107" src="menshawy/107.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio107').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio107').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الكوثر  <br>
+    <audio id="audio108" src="menshawy/108.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio108').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio108').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الكافرون  <br>
+    <audio id="audio109" src="menshawy/109.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio109').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio109').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة النصر  <br>
+    <audio id="audio110" src="menshawy/110.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio110').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio110').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة المسد  <br>
+    <audio id="audio111" src="menshawy/111.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio111').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio111').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الإخلاص  <br>
+    <audio id="audio112" src="menshawy/112.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio112').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio112').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الفلق  <br>
+    <audio id="audio113" src="menshawy/113.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio113').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio113').pause()">إيقاف ⏸</button>
+  </div>
+  
+  <div>سورة الناس  <br>
+    <audio id="audio114" src="menshawy/114.mp3">الشيخ محمد صديق المنشاوي</audio> <br>
+    <button onclick="document.getElementById('audio114').play()">تشغيل ▶</button>
+    <button onclick="document.getElementById('audio114').pause()">إيقاف ⏸</button>
+  </div>
+  
+  
+
+  <footer>
+  </footer>
+   
+   
+  
+</div>
+<div class="mo">  صَلَّى عَلَـيَّ النبيﷺ</div>
+  
+ 
+
+
+
+</body>
+</html>
