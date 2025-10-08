@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتلوه | ماهر المعيقلي</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ad8b50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 0.5rem;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .content {
+      max-width: 500px;
+    }
+    h1 {
+      font-family: 'Rakkas', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 20px;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .shn div{
+      margin: 100px;
+      background-color:#ad8b50;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 50px 50px;
+      gap: 10px;
+      width:300px;
+      color: #121212;
+    }
+    .shn{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button {
+      background-color: #ad8b50;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background-color: #333;
+      color: white;
+    }
+    .mo{
+      background-color: #ad803c;
+      position: fixed;
+      left: 50px;
+      bottom: 10px;
+      color:#172435;
+      scale: 2 2;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="azkar.html">الأذكار</a>
+    <a href="sheikhs.html">القارئ</a>
+    <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
+    <a href="quran.html">القرآن الكريم</a>
+  </nav>
+
+  <main>
+    <div class="content">
+      <h1>مرحبا في قسم التلاوات بصوت الشيخ ماهر المعيقلي</h1>
+    </div>
+    <img src="المعيقلي.jpg" alt="صورة الشيخ ماهر المعيقلي" class="hero-image">
+  </main>
+
+  <div class="shn"></div>
+
+  <script>
+    const surahs = [
+      'الفاتحة','البقرة','آل عمران','النساء','المائدة','الأنعام','الأعراف','الأنفال','التوبة','يونس','هود','يوسف','الرعد','إبراهيم','الحجر','النحل','الإسراء','الكهف','مريم','طه','الأنبياء','الحج','المؤمنون','النور','الفرقان','الشعراء','النمل','القصص','العنكبوت','الروم','لقمان','السجدة','الأحزاب','سبأ','فاطر','يس','الصافات','ص','الزمر','غافر','فصلت','الشورى','الزخرف','الدخان','الجاثية','الأحقاف','محمد','الفتح','الحجرات','ق','الذاريات','الطور','النجم','القمر','الرحمن','الواقعة','الحديد','المجادلة','الحشر','الممتحنة','الصف','الجمعة','المنافقون','التغابن','الطلاق','التحريم','الملك','القلم','الحاقة','المعارج','نوح','الجن','المزمل','المدثر','القيامة','الإنسان','المرسلات','النبأ','النازعات','عبس','التكوير','الإنفطار','المطففين','الإنشقاق','البروج','الطارق','الأعلى','الغاشية','الفجر','البلد','الشمس','الليل','الضحى','الشرح','التين','العلق','القدر','البينة','الزلزلة','العاديات','القارعة','التكاثر','العصر','الهمزة','الفيل','قريش','الماعون','الكوثر','الكافرون','النصر','المسد','الإخلاص','الفلق','الناس'
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.shn');
+      surahs.forEach((name, index) => {
+        const id = String(index + 1).padStart(3, '0');
+        const div = document.createElement('div');
+        div.innerHTML = `سورة ${name}<br>
+          <audio id="${id}" src="https://server12.mp3quran.net/maher/${id}.mp3"></audio>
+          <button onclick="document.getElementById('${id}').play()">تشغيل ▶</button>
+          <button onclick="document.getElementById('${id}').pause()">إيقاف ⏸</button>`;
+        container.appendChild(div);
+      });
+    });
+  </script>
+
+  <div class="mo">صَلَّى عَلَـيَّ النبي ﷺ</div>
+</body>
+</html>
