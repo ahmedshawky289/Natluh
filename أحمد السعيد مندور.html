@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتلوه | أحمد السعيد مندور</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ad8b50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 0.5rem;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .content {
+      max-width: 500px;
+    }
+    h1 {
+      font-family: 'Rakkas', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 20px;
+    }
+    .shn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .shn div {
+      background-color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      padding: 20px;
+      width: 250px;
+      color: #121212;
+      font-weight: bold;
+    }
+    button {
+      background-color: #121212;
+      color: #ad8b50;
+      border: 1px solid #121212;
+      border-radius: 10px;
+      padding: 5px 15px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      width: 80%;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+      color: white;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="azkar.html">الأذكار</a>
+        <a href="sheikhs.html">القارئ</a>
+        <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
+        <a href="quran.html">القرآن الكريم</a>
+      </nav>
+
+  <main>
+    <div class="content">
+      <h1>مرحبا في قسم التلاوات بصوت الشيخ أحمد السعيد مندور</h1>
+    </div>
+    <img src=" أحمد السعيد مندور.jpg" alt="الشيخ أحمد السعيد مندور" class="hero-image">
+  </main>
+
+<div class="shn">
+    <div>سورة الفاتحة <audio id="001" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/001.mp3"></audio> 
+        <button onclick="document.getElementById('001').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('001').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة البقرة <audio id="002" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/002.mp3"></audio> 
+        <button onclick="document.getElementById('002').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('002').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة آل عمران <audio id="003" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/003.mp3"></audio> 
+        <button onclick="document.getElementById('003').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('003').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة النساء <audio id="004" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/004.mp3"></audio> 
+        <button onclick="document.getElementById('004').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('004').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة المائدة <audio id="005" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/005.mp3"></audio> 
+        <button onclick="document.getElementById('005').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('005').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الأنعام <audio id="006" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/006.mp3"></audio> 
+        <button onclick="document.getElementById('006').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('006').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الأعراف <audio id="007" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/007.mp3"></audio> 
+        <button onclick="document.getElementById('007').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('007').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة يونس <audio id="010" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/010.mp3"></audio> 
+        <button onclick="document.getElementById('010').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('010').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة يوسف <audio id="012" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/012.mp3"></audio> 
+        <button onclick="document.getElementById('012').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('012').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الرعد <audio id="013" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/013.mp3"></audio> 
+        <button onclick="document.getElementById('013').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('013').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة إبراهيم <audio id="014" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/014.mp3"></audio> 
+        <button onclick="document.getElementById('014').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('014').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الإسراء <audio id="017" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/017.mp3"></audio> 
+        <button onclick="document.getElementById('017').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('017').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الكهف <audio id="018" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/018.mp3"></audio> 
+        <button onclick="document.getElementById('018').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('018').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة مريم <audio id="019" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/019.mp3"></audio> 
+        <button onclick="document.getElementById('019').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('019').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الأنبياء <audio id="021" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/021.mp3"></audio> 
+        <button onclick="document.getElementById('021').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('021').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الحج <audio id="022" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/022.mp3"></audio> 
+        <button onclick="document.getElementById('022').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('022').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة المؤمنون <audio id="023" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/023.mp3"></audio> 
+        <button onclick="document.getElementById('023').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('023').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة النور <audio id="024" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/024.mp3"></audio> 
+        <button onclick="document.getElementById('024').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('024').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الفرقان <audio id="025" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/025.mp3"></audio> 
+        <button onclick="document.getElementById('025').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('025').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الشعراء <audio id="026" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/026.mp3"></audio> 
+        <button onclick="document.getElementById('026').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('026').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة القصص <audio id="028" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/028.mp3"></audio> 
+        <button onclick="document.getElementById('028').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('028').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة لقمان <audio id="031" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/031.mp3"></audio> 
+        <button onclick="document.getElementById('031').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('031').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة السجدة <audio id="032" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/032.mp3"></audio> 
+        <button onclick="document.getElementById('032').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('032').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة فاطر <audio id="035" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/035.mp3"></audio> 
+        <button onclick="document.getElementById('035').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('035').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة يس <audio id="036" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/036.mp3"></audio> 
+        <button onclick="document.getElementById('036').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('036').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الصافات <audio id="037" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/037.mp3"></audio> 
+        <button onclick="document.getElementById('037').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('037').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة غافر <audio id="040" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/040.mp3"></audio> 
+        <button onclick="document.getElementById('040').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('040').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة فصلت <audio id="041" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/041.mp3"></audio> 
+        <button onclick="document.getElementById('041').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('041').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الشورى <audio id="042" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/042.mp3"></audio> 
+        <button onclick="document.getElementById('042').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('042').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الدخان <audio id="044" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/044.mp3"></audio> 
+        <button onclick="document.getElementById('044').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('044').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الجاثية <audio id="045" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/045.mp3"></audio> 
+        <button onclick="document.getElementById('045').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('045').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الحجرات <audio id="049" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/049.mp3"></audio> 
+        <button onclick="document.getElementById('049').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('049').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة ق <audio id="050" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/050.mp3"></audio> 
+        <button onclick="document.getElementById('050').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('050').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الطور <audio id="052" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/052.mp3"></audio> 
+        <button onclick="document.getElementById('052').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('052').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة النجم <audio id="053" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/053.mp3"></audio> 
+        <button onclick="document.getElementById('053').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('053').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة القمر <audio id="054" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/054.mp3"></audio> 
+        <button onclick="document.getElementById('054').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('054').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الرحمن <audio id="055" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/055.mp3"></audio> 
+        <button onclick="document.getElementById('055').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('055').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الواقعة <audio id="056" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/056.mp3"></audio> 
+        <button onclick="document.getElementById('056').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('056').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الحديد <audio id="057" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/057.mp3"></audio> 
+        <button onclick="document.getElementById('057').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('057').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الصف <audio id="061" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/061.mp3"></audio> 
+        <button onclick="document.getElementById('061').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('061').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الجمعة <audio id="062" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/062.mp3"></audio> 
+        <button onclick="document.getElementById('062').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('062').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة المنافقون <audio id="063" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/063.mp3"></audio> 
+        <button onclick="document.getElementById('063').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('063').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة التغابن <audio id="064" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/064.mp3"></audio> 
+        <button onclick="document.getElementById('064').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('064').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الطلاق <audio id="065" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/065.mp3"></audio> 
+        <button onclick="document.getElementById('065').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('065').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة التحريم <audio id="066" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/066.mp3"></audio> 
+        <button onclick="document.getElementById('066').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('066').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الملك <audio id="067" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/067.mp3"></audio> 
+        <button onclick="document.getElementById('067').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('067').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة المزمل <audio id="073" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/073.mp3"></audio> 
+        <button onclick="document.getElementById('073').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('073').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة المدثر <audio id="074" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/074.mp3"></audio> 
+        <button onclick="document.getElementById('074').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('074').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة القيامة <audio id="075" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/075.mp3"></audio> 
+        <button onclick="document.getElementById('075').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('075').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الإنسان <audio id="076" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/076.mp3"></audio> 
+        <button onclick="document.getElementById('076').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('076').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الانشقاق <audio id="084" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/084.mp3"></audio> 
+        <button onclick="document.getElementById('084').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('084').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الطارق <audio id="086" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/086.mp3"></audio> 
+        <button onclick="document.getElementById('086').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('086').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الفجر <audio id="089" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/089.mp3"></audio> 
+        <button onclick="document.getElementById('089').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('089').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة الشمس <audio id="091" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/091.mp3"></audio> 
+        <button onclick="document.getElementById('091').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('091').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة التين <audio id="095" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/095.mp3"></audio> 
+        <button onclick="document.getElementById('095').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('095').pause()">إيقاف ⏸</button>
+    </div>
+
+    <div>سورة القدر <audio id="097" src="https://ia601502.us.archive.org/28/items/ahmed-alsaed-mndur/097.mp3"></audio> 
+        <button onclick="document.getElementById('097').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('097').pause()">إيقاف ⏸</button>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 جميع الحقوق محفوظة - قسم التلاوات
+</footer>
+
+</body>
+</html>

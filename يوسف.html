@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتلوه | يوسف الصقير</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ad8b50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 0.5rem;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .content {
+      max-width: 500px;
+    }
+    h1 {
+      font-family: 'Rakkas', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 20px;
+    }
+    .shn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .shn div {
+      margin: 20px;
+      background-color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 25px;
+      padding: 20px;
+      gap: 10px;
+      width: 250px;
+      color: #121212;
+      font-weight: bold;
+    }
+    button {
+      background-color: #121212;
+      color: #ad8b50;
+      border: 1px solid #121212;
+      border-radius: 10px;
+      padding: 5px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+      color: white;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="azkar.html">الأذكار</a>
+        <a href="sheikhs.html">القارئ</a>
+        <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
+        <a href="quran.html">القرآن الكريم</a>
+    </nav>
+
+  <main>
+    <div class="content">
+      <h1>مرحبا في قسم التلاوات بصوت الشيخ يوسف الصقير</h1>
+    </div>
+    <img src="يوسف.jpg" alt="صورة تعبيرية" class="hero-image">
+  </main>
+
+<div class="shn">
+    <div> سورة الفاتحة <audio id="001" src="https://archive.org/download/002_20250314/001.mp3"></audio> 
+        <button onclick="document.getElementById('001').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('001').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة البقرة <audio id="002" src="https://archive.org/download/002_20250314/002.mp3"></audio> 
+        <button onclick="document.getElementById('002').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('002').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة آل عمران <audio id="003" src="https://archive.org/download/002_20250314/003.mp3"></audio> 
+        <button onclick="document.getElementById('003').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('003').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الأنفال <audio id="008" src="https://archive.org/download/002_20250314/008.mp3"></audio> 
+        <button onclick="document.getElementById('008').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('008').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة يوسف <audio id="012" src="https://archive.org/download/002_20250314/012.mp3"></audio> 
+        <button onclick="document.getElementById('012').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('012').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الرعد <audio id="013" src="https://archive.org/download/002_20250314/013.mp3"></audio> 
+        <button onclick="document.getElementById('013').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('013').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الحجر <audio id="015" src="https://archive.org/download/002_20250314/015.mp3"></audio> 
+        <button onclick="document.getElementById('015').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('015').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الأنبياء <audio id="021" src="https://archive.org/download/002_20250314/021.mp3"></audio> 
+        <button onclick="document.getElementById('021').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('021').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الفرقان <audio id="025" src="https://archive.org/download/002_20250314/025.mp3"></audio> 
+        <button onclick="document.getElementById('025').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('025').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة لقمان <audio id="031" src="https://archive.org/download/002_20250314/031.mp3"></audio> 
+        <button onclick="document.getElementById('031').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('031').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة السجدة <audio id="032" src="https://archive.org/download/002_20250314/032.mp3"></audio> 
+        <button onclick="document.getElementById('032').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('032').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة يس <audio id="036" src="https://archive.org/download/002_20250314/036.mp3"></audio> 
+        <button onclick="document.getElementById('036').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('036').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الصافات <audio id="037" src="https://archive.org/download/002_20250314/037.mp3"></audio> 
+        <button onclick="document.getElementById('037').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('037').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة فصلت <audio id="041" src="https://archive.org/download/002_20250314/041.mp3"></audio> 
+        <button onclick="document.getElementById('041').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('041').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الدخان <audio id="044" src="https://archive.org/download/002_20250314/044.mp3"></audio> 
+        <button onclick="document.getElementById('044').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('044').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الجاثية <audio id="045" src="https://archive.org/download/002_20250314/045.mp3"></audio> 
+        <button onclick="document.getElementById('045').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('045').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الأحقاف <audio id="046" src="https://archive.org/download/002_20250314/046.mp3"></audio> 
+        <button onclick="document.getElementById('046').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('046').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة محمد <audio id="047" src="https://archive.org/download/002_20250314/047.mp3"></audio> 
+        <button onclick="document.getElementById('047').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('047').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الحجرات <audio id="049" src="https://archive.org/download/002_20250314/049.mp3"></audio> 
+        <button onclick="document.getElementById('049').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('049').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الذاريات <audio id="051" src="https://archive.org/download/002_20250314/051.mp3"></audio> 
+        <button onclick="document.getElementById('051').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('051').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الطور <audio id="052" src="https://archive.org/download/002_20250314/052.mp3"></audio> 
+        <button onclick="document.getElementById('052').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('052').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة النجم <audio id="053" src="https://archive.org/download/002_20250314/053.mp3"></audio> 
+        <button onclick="document.getElementById('053').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('053').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الرحمن <audio id="055" src="https://archive.org/download/002_20250314/055.mp3"></audio> 
+        <button onclick="document.getElementById('055').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('055').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الصف <audio id="061" src="https://archive.org/download/002_20250314/061.mp3"></audio> 
+        <button onclick="document.getElementById('061').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('061').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الجمعة <audio id="062" src="https://archive.org/download/002_20250314/062.mp3"></audio> 
+        <button onclick="document.getElementById('062').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('062').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة المنافقون <audio id="063" src="https://archive.org/download/002_20250314/063.mp3"></audio> 
+        <button onclick="document.getElementById('063').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('063').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الملك <audio id="067" src="https://archive.org/download/002_20250314/067.mp3"></audio> 
+        <button onclick="document.getElementById('067').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('067').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة القلم <audio id="068" src="https://archive.org/download/002_20250314/068.mp3"></audio> 
+        <button onclick="document.getElementById('068').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('068').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الحاقة <audio id="069" src="https://archive.org/download/002_20250314/069.mp3"></audio> 
+        <button onclick="document.getElementById('069').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('069').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة نوح <audio id="071" src="https://archive.org/download/002_20250314/071.mp3"></audio> 
+        <button onclick="document.getElementById('071').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('071').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الجن <audio id="072" src="https://archive.org/download/002_20250314/072.mp3"></audio> 
+        <button onclick="document.getElementById('072').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('072').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة المزمل <audio id="073" src="https://archive.org/download/002_20250314/073.mp3"></audio> 
+        <button onclick="document.getElementById('073').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('073').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة المدثر <audio id="074" src="https://archive.org/download/002_20250314/074.mp3"></optional_audio> 
+        <button onclick="document.getElementById('074').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('074').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة القيامة <audio id="075" src="https://archive.org/download/002_20250314/075.mp3"></audio> 
+        <button onclick="document.getElementById('075').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('075').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الإنسان <audio id="076" src="https://archive.org/download/002_20250314/076.mp3"></audio> 
+        <button onclick="document.getElementById('076').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('076').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة النبأ <audio id="078" src="https://archive.org/download/002_20250314/078.mp3"></audio> 
+        <button onclick="document.getElementById('078').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('078').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة النازعات <audio id="079" src="https://archive.org/download/002_20250314/079.mp3"></audio> 
+        <button onclick="document.getElementById('079').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('079').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة المطففين <audio id="083" src="https://archive.org/download/002_20250314/083.mp3"></audio> 
+        <button onclick="document.getElementById('083').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('083').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الضحى <audio id="093" src="https://archive.org/download/002_20250314/093.mp3"></audio> 
+        <button onclick="document.getElementById('093').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('093').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الزلزلة <audio id="099" src="https://archive.org/download/002_20250314/099.mp3"></audio> 
+        <button onclick="document.getElementById('099').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('099').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة العاديات <audio id="100" src="https://archive.org/download/002_20250314/100.mp3"></audio> 
+        <button onclick="document.getElementById('100').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('100').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة القارعة <audio id="101" src="https://archive.org/download/002_20250314/101.mp3"></audio> 
+        <button onclick="document.getElementById('101').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('101').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة التكاثر <audio id="102" src="https://archive.org/download/002_20250314/102.mp3"></audio> 
+        <button onclick="document.getElementById('102').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('102').pause()">إيقاف ⏸</button>
+    </div>
+    <div> سورة الناس <audio id="114" src="https://archive.org/download/002_20250314/114.mp3"></audio> 
+        <button onclick="document.getElementById('114').play()">تشغيل ▶</button>
+        <button onclick="document.getElementById('114').pause()">إيقاف ⏸</button>
+    </div>
+</div>
+
+<footer>
+    جميع الحقوق محفوظة &copy; 2026
+</footer>
+
+</body>
+</html>
