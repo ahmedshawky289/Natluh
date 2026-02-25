@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <head>
@@ -7,45 +6,71 @@
 <title>نتلوه | مواقيت الصلاة</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Rakkas&amp;display=swap" rel="stylesheet"/>
 <style>
-    html, body {
-      height: 100%;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      min-height: 100vh;
       font-family: 'Cairo', sans-serif;
       background-color: #121212;
       color: #ad8b50;
       display: flex;
       flex-direction: column;
-      text-align: center;
     }
     h1 {
       font-family: 'Rakkas', cursive;
       font-size: 2.5rem;
       margin: 1rem 0;
     }
+    h2 {
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
+    .ayah {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #e6c200;
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      border-right: 4px solid #ad8b50;
+    }
     .prayer-times {
-      max-width: 100%;
+      width: 100%;
+      padding: 1rem;
       overflow-x: auto;
-      margin: auto;
     }
     .prayer-table {
       width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
       border-collapse: collapse;
       background-color: #1a1a1a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
     .prayer-table th, .prayer-table td {
       padding: 1rem;
       border: 1px solid #ad8b50;
+      text-align: center;
     }
     .prayer-table th {
       background-color: #ad8b50;
       color: #121212;
+      font-weight: bold;
     }
     .prayer-table td {
       color: #ad8b50;
     }
+    .prayer-table tr:hover {
+      background-color: #2a2a2a;
+    }
     .error-message {
       color: #e6c200;
       margin-top: 1rem;
+      text-align: center;
     }
     
   
@@ -54,65 +79,114 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
-      flex-grow: 1;
       justify-content: space-around;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+  }
+  nav .logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 1rem;
   }
   nav a {
       color: #ad8b50;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
-      white-space: wrap;
   }
   nav a:hover {
     color: white;
   }
-  img{
-    width: 200px;
-    height: 200px;
-  }
+  
   main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-
+    padding: 2rem 1rem;
+    gap: 2rem;
+    flex: 1;
   }
-  main h1{
-    translate: 0 50px;
+  
+  main .content {
+    max-width: 500px;
   }
- 
-
-
-@media (max-width: 600px) {
-  img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+  
+  main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  main h1 {
+    margin: 0;
   }
 
-  main {
+  .main-content {
+    flex: 1;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #ad8b50;
+    margin-top: auto;
+  }
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  .mo {
+    text-align: center;
+    padding: 1rem;
+    color: #ad8b50;
+    font-size: 1.2rem;
+    font-family: 'Rakkas', cursive;
+    background-color: #121212;
+    width: 100%;
+    margin: 0;
+  }
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main img {
+    width: 150px;
+    height: 150px;
   }
 
   .prayer-table th, .prayer-table td {
-    padding: 0.5rem;
+    padding: 0.7rem;
     font-size: 0.9rem;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 </style>
 </head>
 <body>
   <nav>
+    <img src="logo.png" alt="لوجو نتلوه" class="logo">
     <a href="index.html">الرئيسية</a>
     <a href="azkar.html">الأذكار</a>
     <a href="sheikhs.html">القارئ</a>
@@ -121,11 +195,18 @@
   </nav>
 
 <main>
-    <div class="content">
-      <h1>(وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَأَطِيعُوا الرَّسُولَ لَعَلَّكُمْ تُرْحَمُونَ)</h1>
-    </div>
+<div class="ayah">
+          <p>﴿ وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَأَطِيعُوا الرَّسُولَ لَعَلَّكُمْ تُرْحَمُونَ﴾</p>
+          <p style="font-size: 0.9rem; color: #ad8b50; margin-top: 0.5rem;">سورة النور - الآية 56 </p>
+        </div>
+
+
+
+    
     <img src="sajed.png" alt="صورة تعبيرية" class="hero-image">
-  </main>    
+</main>
+
+<div class="main-content">
     <h1 id="hijri-title">مواقيت الصلاة</h1>
     <h2 id="prayer-date">مواقيت الصلاة ليوم ...</h2>
 
@@ -150,6 +231,14 @@
   </table>
   </div>
   <p class="error-message" id="error-message" style="display:none;"></p>
+</div>
+
+  <div class="mo">صَلَّى عَلَـيَّ النبيﷺ</div>
+  <footer>
+    <p>&copy; 2024 موقع نتلوه - جميع الحقوق محفوظة</p>
+    <p>منصة دينية لتلاوة القرآن الكريم والأذكار اليومية</p>
+  </footer>
+
 <script>
     const cities = [
       { name: 'Cairo', arabic: 'القاهرة' },
@@ -219,5 +308,6 @@
       cities.forEach(city => fetchPrayerTimesForCity(city));
     };
 </script>
+  <script src="scripts.js"></script>
 </body>
 </html>

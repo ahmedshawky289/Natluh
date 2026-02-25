@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // --- Search Logic (Existing) ---
     const searchInput = document.getElementById("searchInput");
     const searchResults = document.getElementById("searchResults");
     const surahs = [
@@ -16,18 +17,56 @@ document.addEventListener("DOMContentLoaded", function () {
         "المسد", "الإخلاص", "الفلق", "الناس"
     ];
 
-    searchInput.addEventListener("input", function () {
-        const query = this.value.trim();
-        searchResults.innerHTML = "";
+    if (searchInput && searchResults) {
+        searchInput.addEventListener("input", function () {
+            const query = this.value.trim();
+            searchResults.innerHTML = "";
 
-        if (query.length > 0) {
-            surahs
-                .filter(surah => surah.includes(query))
-                .forEach(surah => {
-                    const listItem = document.createElement("li");
-                    listItem.textContent = surah;
-                    searchResults.appendChild(listItem);
-                });
-        }
+            if (query.length > 0) {
+                surahs
+                    .filter(surah => surah.includes(query))
+                    .forEach(surah => {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = surah;
+                        searchResults.appendChild(listItem);
+                    });
+            }
+        });
+    }
+
+    // --- Audio Player Logic (New) ---
+    const audioElements = document.querySelectorAll('audio');
+    
+    audioElements.forEach((audio, index) => {
+        // 1. Stop other audios when one starts
+        audio.addEventListener('play', () => {
+            audioElements.forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                    otherAudio.currentTime = 0;
+                }
+            });
+        });
+
+        // 2. Play next audio when current finishes
+        audio.addEventListener('ended', () => {
+            const nextAudio = audioElements[index + 1];
+            if (nextAudio) {
+                nextAudio.play();
+                // Scroll to next audio element for better UX
+                nextAudio.parentElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
     });
 });
+
+// Global functions for buttons (if needed, though event listeners are better)
+function playAudio(id) {
+    const audio = document.getElementById(id);
+    if (audio) audio.play();
+}
+
+function pauseAudio(id) {
+    const audio = document.getElementById(id);
+    if (audio) audio.pause();
+}

@@ -8,7 +8,15 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
   <style>
-    
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #ad8b50;
+      display: flex;
+      flex-direction: column;
+    }
     nav {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 1rem;
@@ -16,6 +24,11 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
+    }
+    nav .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 1rem;
     }
     nav a {
       color: #ad8b50;
@@ -30,99 +43,126 @@
     main {
       flex: 1;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem;
+      justify-content: flex-start;
+      padding: 2rem 1rem;
       text-align: center;
     }
+    .header-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
     .content {
-      max-width: 500px;
+      max-width: 700px;
     }
     h1 {
       font-family: 'Rakkas', cursive;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    p {
-      font-size: 1.2rem;
+    .ayah {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #e6c200;
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      border-right: 4px solid #ad8b50;
     }
-    
-    .hero-image {
-      max-width: 400px;
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .quran-container {
       width: 100%;
-      border-radius: 20px;
+      max-width: 1000px;
+      display: flex;
+      justify-content: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 900px;
+      height: 800px;
+      border: none;
+      border-radius: 10px;
     }
     footer {
       background-color: rgba(0, 0, 0, 0.6);
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ad8b50;
+      width: 100%;
+    }
+    footer p {
+      margin: 0.5rem 0;
       font-size: 0.9rem;
     }
-  
-@media (max-width: 600px) {
-  main {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  iframe {
-    width: 100% !important;
-    height: 500px;
-    margin: 0 !important;
-  }
-
-  .hero-image {
-    max-width: 100%;
-    border-radius: 15px;
-  }
-
-  .content {
-    max-width: 100%;
-  }
-}
-</style>
+    @media (max-width: 768px) {
+      main {
+        padding: 1rem;
+      }
+      .header-section {
+        gap: 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      iframe {
+        height: 600px;
+      }
+      nav .logo {
+        width: 60px;
+        height: 60px;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav>
+    <img src="logo.png" alt="لوجو نتلوه" class="logo">
     <a href="index.html">الرئيسية</a>
     <a href="azkar.html">الأذكار</a>
     <a href="sheikhs.html">القارئ</a>
     <a href="مواقيت الصلاة.html">مواقيت الصلاة</a>
     <a href="quran.html">القرآن الكريم</a>
   </nav>
-  
 
   <main>
-    <div class="content">
-      <h1>مرحبا في قسم قراءة  القرآن الكريم</h1>
-      <p>﴿ الم * اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ * نَزَّلَ عَلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِمَا بَيْنَ يَدَيْهِ وَأَنْزَلَ التَّوْرَاةَ وَالْإِنْجِيلَ * مِنْ قَبْلُ هُدًى لِلنَّاسِ وَأَنْزَلَ الْفُرْقَانَ إِنَّ الَّذِينَ كَفَرُوا بِآيَاتِ اللَّهِ لَهُمْ عَذَابٌ شَدِيدٌ وَاللَّهُ عَزِيزٌ ذُو انْتِقَامٍ ﴾</p>
+    <div class="header-section">
+      <div class="content">
+        <h1>مرحبا في قسم قراءة القرآن الكريم</h1>
+        <div class="ayah">
+          <p>﴿ كِتَابٌ أَنْزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ ﴾</p>
+          <p style="font-size: 0.9rem; color: #ad8b50; margin-top: 0.5rem;">سورة ص - الآية 29</p>
+        </div>
+      </div>
     </div>
-    <img src="5792133762732115814.jpg" alt="صورة تعبيرية" class="hero-image">
+
+    <div class="quran-container">
+      <iframe src="https://quran.com/1"></iframe>
+    </div>
   </main>
+
   
 
   <footer>
+    <p>&copy; 2024 موقع نتلوه - جميع الحقوق محفوظة</p>
+    <p>منصة دينية لتلاوة القرآن الكريم والأذكار اليومية</p>
   </footer>
-   
-   
-  <div class="mo">  صَلَّى عَلَـيَّ النبيﷺ</div>
-  
- 
-    <br>
-    <iframe src="https://quran.com/1" style="width: 80%; height: 800px; border: none;"></iframe>
-
-
-
+  <script src="scripts.js"></script>
 </body>
 </html>

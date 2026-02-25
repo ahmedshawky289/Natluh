@@ -23,8 +23,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
+        }
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            margin: 0 1rem;
         }
         .logo {
             font-family: 'Rakkas', cursive;
@@ -35,7 +40,7 @@
         nav {
             display: flex;
             align-items: center;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 1rem;
             flex-grow: 1;
             justify-content: center;
@@ -110,9 +115,14 @@
         .footer {
             background-color: rgba(0, 0, 0, 0.6);
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem;
             font-size: 0.9rem;
             width: 100%;
+            border-top: 1px solid #ad8b50;
+        }
+        .footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
         }
         @media (max-width: 600px) {
             .header {
@@ -136,7 +146,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="logo">نتلوه</h1>
+        <img src="logo.png" alt="لوجو نتلوه" class="logo-img">
         <nav>
             <a href="index.html">الرئيسية</a>
             <a href="azkar.html">الأذكار</a>
@@ -213,9 +223,11 @@
             </a>
         </div>
     </main>
-    <div class="mo">صَلَّى عَلَـيَّ النبي</div>
+    
     <footer class="footer">
-        <p>© 2025 نتلوه. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2024 موقع نتلوه - جميع الحقوق محفوظة</p>
+        <p>منصة دينية لتلاوة القرآن الكريم والأذكار اليومية</p>
     </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>

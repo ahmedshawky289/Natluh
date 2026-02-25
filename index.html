@@ -25,6 +25,11 @@
       align-items: center;
       flex-wrap: wrap;
     }
+    nav .logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 1rem;
+    }
     nav a {
       color: #ad8b50;
       text-decoration: none;
@@ -72,23 +77,45 @@
     .cta-button:hover {
       background-color: #e6c200;
     }
-    .hero-image {
-      max-width: 400px;
+    .logo-image {
+      max-width: 300px;
       width: 100%;
-      border-radius: 20px;
+      height: auto;
     }
     footer {
       background-color: rgba(0, 0, 0, 0.6);
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ad8b50;
+    }
+    footer p {
+      margin: 0.5rem 0;
       font-size: 0.9rem;
     }
-  
-    
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .logo-image {
+        max-width: 200px;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
+    <img src="logo.png" alt="لوجو نتلوه" class="logo">
     <a href="index.html">الرئيسية</a>
     <a href="azkar.html">الأذكار</a>
     <a href="sheikhs.html">القارئ</a>
@@ -102,11 +129,15 @@
       <p>منصة دينية تجمع بين التلاوات الخاشعة، والأذكار اليومية، و قراءة القرآن الكريم.</p>
       <a href="sheikhs.html"><button class="cta-button">ابدأ التصفح الآن</button></a>
     </div>
-    <img src="5792133762732115814.jpg" alt="صورة تعبيرية لتلاوة القرآن" class="hero-image">
+    <img src="logo.png" alt="لوجو نتلوه" class="logo-image">
   </main>
 
-  <div class="mo">صَلَّى عَلَـيَّ النبي</div>
-
   
+
+  <footer>
+    <p>&copy; 2024 موقع نتلوه - جميع الحقوق محفوظة</p>
+    <p>منصة دينية لتلاوة القرآن الكريم والأذكار اليومية</p>
+  </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
